@@ -3,3 +3,12 @@ CREATE DATABASE Pruebas;
 CREATE USER 'mickey'@'localhost' IDENTIFIED BY 'mouse';
 
 GRANT ALL ON Pruebas.* TO 'mickey'@'localhost';
+
+USE Pruebas;
+
+CREATE TABLE IF NOT EXISTS Paises (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+	NOMBRE_PAIS VARCHAR(50)
+);
+
+FLUSH PRIVILEGES;
